@@ -1,0 +1,155 @@
+@import "./_normalize.css";
+
+html{
+    background-color: darkslategray;
+    color:#fff;
+}
+a{
+    text-decoration:none;
+    color:rgb(201,120,12);
+}
+#app{
+    margin: 0 100px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(135,69,33);
+    border-radius: 10px;
+    padding: 0 20px;
+    line-height: 35px;
+    box-shadow: 2px 2px 10px 1px rgb(56,24,1);
+    margin-top: 15px;
+}
+.content{
+    background-color: rgb(199,135,56);
+    padding: 20px;
+    padding-bottom: 70px;
+    margin: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 1px rgb(56,24,1);
+}
+.btn{
+    display: inline-block;
+    margin: 30px 10px 0 10px;
+}
+.btn-false{
+    color:gray;
+}
+.btn2{
+    display: inline-block;
+    margin: 0px 10px;
+    color: rgb(80,47,22);
+}
+.nav,
+.content{
+    position: relative;
+}
+.deco{
+    position: absolute;
+    top:10px;
+    right:10px;
+    background-color:#fff;
+    border-radius:10px;
+    height: 10px;
+    width: 10px;
+}
+
+.form__field-wrapper{
+    padding: 0 320px;
+    margin-top: 30px;
+}
+.form__field-input{
+    float: left;
+    width: 120px;
+}
+.cl:after{
+    display: block;
+    height: 0;
+    clear: both;
+    content:"";
+    visibility: hidden;
+}
+.cl{
+    zoom:1;
+}
+
+.form__field-label{
+    float: right;
+    color:rgb(57,32,15);
+    font-size:12px;
+    width: 150px;
+}
+.error{
+    color:rgb(56,24,1);
+}
+.form__submit-btn{
+    margin-top: 50px;
+    width: 300px;
+    background-color: rgb(56,24,1);
+    border: none;
+    line-height: 28px;
+}
+.new-todo{
+    color:rgb(118,77,57);
+    font-size:14px;
+}
+.container{
+    margin:20px 80px;
+    padding: 20px;
+}
+.container li{
+    border: 1px solid rgb(237,222,139);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    list-style: none;
+}
+.container li span{
+    position: absolute;
+    bottom: 2px;
+    right: 7px;
+    font-size: 12px;
+    color: rgb(89,69,61);
+}
+
+.completed{
+    position: absolute;
+    left: 20px;
+    top:50%;
+    margin-top: -10px;
+}
+.completed input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.icon-checkbox{
+    display: block;
+    background: url("../img/check-box-empty.png")  center center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    width: 20px;
+    height:20px;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+.border{
+    border: 1px solid rgb(237,222,139);
+    position: relative;
+    border-radius: 10px;
+    top: -5px;
+    left: 5px;
+    background-color: rgb(229,187,129);
+}
+
